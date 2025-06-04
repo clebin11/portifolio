@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfólio do Cleberson</title>
+    <style>
+        .texto-preto {
+            color: #000 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container text-center">
+        <img src="img/avatar-perfil.png" alt="avatar do Cleberson" class="rounded-circle" width="150" height="150" />
+        <p class="lead">Eu sou Cleberson</p>
+        <h1>Eu estudo Programação</h1>
+        <p>
+            Sou estudante de Programação e atualmente estou no 3º ano do ensino médio. Tenho 17 anos e sou apaixonado por tecnologia e desenvolvimento de software. Gosto de aprender e compartilhar conhecimentos sobre programação e desenvolvimento web, utilizando principalmente HTML, CSS e JavaScript. Meu objetivo é ajudar pessoas de diferentes níveis a entenderem esses assuntos através de projetos práticos e didáticos. Confira meus trabalhos e acompanhe minha jornada de aprendizado e crescimento na área de tecnologia!
+        </p>
+        <p>Minhas habilidades</p>
+        <div>
+            <p class="badge bg-secondary">HTML</p>
+            <p class="badge bg-secondary">CSS</p>
+            <p class="badge bg-secondary">JavaScript</p>
+            <p class="badge bg-secondary">Python</p>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Screenshot 2025-05-26 18.12.32.png" class="card-img-top" alt="Imagem do projeto de biblioteca virtual" />
+                    <div class="card-body">
+                        <h5 class="card-title">Listas</h5>
+                        <p class="card-text">
+                            é um projeto interativo desenvolvido na plataforma Scratch, onde o conceito de listas é explorado de maneira criativa e funcional. Neste jogo, os jogadores podem embaralhar e distribuir cartas de um baralho virtual, tudo controlado por listas dinâmicas que mantêm as informações das cartas, como valores, imagens e efeitos especiais.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">
+                            Veja o projeto
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Screenshot 2025-05-26 18.16.36.png" class="card-img-top" alt="Imagem do projeto de inteligência artificial" />
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Flashcard
+                        </h5>
+                        <p class="card-text">
+                            é um projeto interativo no que utiliza o conceito de listas para criar um sistema de flashcards digitais, ideal para quem quer aprender ou revisar conceitos de forma dinâmica e divertida. O projeto permite ao usuário explorar diferentes categorias de perguntas e respostas, ajudando na memorização e no aprendizado de conteúdos como vocabulário, matemática, história e muito mais.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">
+                            Veja o projeto
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/Screenshot 2025-06-02 17.51.15.png" class="card-img-top" alt="Imagem do projeto de astronomia interativa" />
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Ping-Pong
+                        </h5>
+                        <p class="card-text">
+                            é um jogo interativo de tênis de mesa desenvolvido na plataforma Scratch, onde os jogadores podem competir em partidas rápidas de ping pong. O jogo utiliza o conceito de listas para gerenciar pontuações, controlar a posição da bola e até mesmo ajustar a dificuldade, proporcionando uma experiência dinâmica e divertida para os jogadores.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">
+                            Veja o projeto
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Descrição do Projeto:
+O projeto Cartas Mágicas é um jogo de cartas interativo criado no Scratch, utilizando o conceito de listas para organizar e embaralhar cartas de forma dinâmica. A ideia do jogo é que o jogador possa interagir com um baralho virtual, distribuindo e organizando as cartas conforme o jogo avança..</p>
+                    <p>Estrutura e Funcionalidade:
+
+Estrutura HTML: A página é organizada em um layout simples com um cabeçalho que contém o nome do jogo, seguido por uma área principal (.container) onde o baralho e as cartas são exibidos. Cada carta é tratada como um objeto interativo, podendo ser clicada para revelar informações adicionais.</p>
+                    <p>Estilização CSS: O design do jogo é caracterizado por cores vibrantes e tipografia divertida, criando uma atmosfera lúdica. A utilização de variáveis de cor e uma paleta vibrante contribuem para a experiência visual do jogo.</p>
+                    <p>Funcionalidade no Scratch: As listas são usadas para gerenciar o estado das cartas (embaralhamento, valor e posição), permitindo que os jogadores possam manipular as cartas com facilidade. O jogo pode incluir efeitos sonoros e visuais para tornar a experiência mais envolvente.
+
+Objetivo do Projeto:
+O objetivo principal é criar uma experiência interativa e divertida para os jogadores, ao mesmo tempo que se explora o uso de listas no Scratch para organizar e manipular os dados do jogo.</p>
+                    <img src="img/Screenshot 2025-05-26 18.12.32.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto de uma biblioteca online">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://scratch.mit.edu/projects/1033474018/editor">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Flashcards Educativos é um projeto de estudo interativo desenvolvido no Scratch que utiliza listas para criar uma coleção de flashcards digitais. Cada flashcard contém uma pergunta e sua resposta correspondente, ajudando os usuários a aprender novos conceitos de maneira prática e divertida.</p>
+                    <p>Estrutura HTML: O layout do projeto é simples, com uma seção de cabeçalho contendo o título do site e a introdução ao uso de flashcards. A área principal (.container) exibe os flashcards de forma interativa, permitindo ao usuário clicar para visualizar a resposta.</p>
+                    <p>Estilização CSS: A página usa cores suaves e fontes agradáveis, criadas para tornar a experiência de estudo mais relaxante. O design é limpo e organizado, com um foco na acessibilidade e na legibilidade..</p>
+                    <p>Funcionalidade no Scratch: As listas são usadas para armazenar pares de perguntas e respostas, tornando o processo de revisão mais dinâmico e fluido. Cada flashcard é interativo, permitindo ao usuário alternar entre perguntas e respostas de forma rápida e prática.
+
+Objetivo do Projeto:
+O principal objetivo deste projeto é ajudar na memorização de conteúdos de forma interativa e acessível, utilizando listas no Scratch para organizar o conteúdo educacional de maneira eficaz.
+                    </p>
+                    <img src="img/Screenshot 2025-05-26 18.16.36.png" class="img-fluid w-100"
+                        alt="Imagem representativa do projeto de uma biblioteca online">
+                </div>
+                <div class="modal-footer">
+                    <a href="file:///media/fuse/drivefs-73785b77472b233c1be7128d77dd855f/root/FLASHCARD/index.html">Ver projeto ao
+                        vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Minha Biblioteca: Uma Webpage Personalizada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ping Pong no Scratch é um jogo simples de tênis de mesa criado na plataforma Scratch. O jogo usa listas para controlar o movimento da bola e a pontuação, criando uma experiência interativa e competitiva para um ou dois jogadores.</p>
+                    <p>Estrutura HTML: A página de apresentação do jogo possui um título no cabeçalho, seguido por uma descrição breve do objetivo do jogo. Na área principal (.container), o layout exibe a simulação do jogo, com as raquetes e a bola visíveis, prontos para a interação.</p>
+                    <p>Funcionalidade no Scratch: As listas controlam a pontuação e o movimento da bola, atualizando a cada rodada. A física do movimento é gerenciada de forma simples, com base nas interações do jogador (movimento das raquetes e a direção da bola), oferecendo um jogo dinâmico.
+
+Objetivo do Projeto:
+O objetivo do Ping Pong no Scratch é criar uma experiência divertida de jogo, enquanto se ensina como usar listas para gerenciar pontuação e movimentação de objetos em um jogo interativo no Scratch.
+
+</p>
+                    <img src="img/Screenshot 2025-06-02 17.51.15.png" alt="Projeto 3" class="img-fluid w-100">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://scratch.mit.edu/projects/1037138161/editor">Ver projeto ao vivo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/clebin11">GitHub</a>
+        </div>
+        <p class="my-5 text-center">© Copyright 2025. Produzido por Cleberson </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* === VARIÁVEIS DE COR === */
+:root {
+    --cor-principal: #ff0000;        /* Texto principal */
+    --cor-secundaria: #f00b0b;       /* Títulos */
+    --cor-destaque:rgb(242, 10, 10);         /* Links e botões de destaque */
+    --cor-fundo: #000000;            /* Fallback se imagem não carregar */
+}
+
+/* === ESTILOS GERAIS === */
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    color: var(--cor-principal);
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--cor-fundo); /* Fallback */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Melhora legibilidade */
+}
+
+/* === IMAGEM DE FUNDO === */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url('img/fundo.jpg'); /* Caminho da imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.2);
+    z-index: -1;
+}
+
+/* === TÍTULOS === */
+h1, h2, h5 {
+    color: var(--cor-secundaria);
+    font-weight: 700;
+}
+
+/* === TEXTOS DE DESTAQUE === */
+.lead, .btn-link {
+    color: var(--cor-destaque);
+    font-weight: 700;
+}
+
+/* === LINKS === */
+a {
+    color: var(--cor-destaque);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+.btn-link:hover {
+    color: var(--cor-principal);
+}
+
+/* === RESPONSIVIDADE (opcional) === */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
